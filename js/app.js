@@ -31,7 +31,7 @@ services.forEach(function(service) {
 const form = document.getElementById("tip-form")
 const amount = document.getElementById("input-bill")
 const users = document.getElementById("input-users")
-const service = document.getElementById("input-services")
+const service = document.getElementById("input-service")
 
 // Feedback 
 
@@ -55,6 +55,9 @@ form.addEventListener('submit', function(event) {
         <p>Must be more than one person sharing</p>
         <p>Service has to be selected</p>
         `
+        setTimeout(function() {
+            feedback.classList.remove('showItem', 'alert-danger')
+        },5000)
     }
     
 })
