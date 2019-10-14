@@ -63,10 +63,17 @@ form.addEventListener('submit', function(event) {
         feedback.innerHTML = `<p>calculating...</p>`
         loader.classList.add('showItem')
         setTimeout(function() {
+            feedback.classList.remove('showItem', 'alert-success')
             loader.classList.remove('showItem')
+            showResults(bill, people, quality)
+            ClearForm()
         },5000)
-
     }
-    
 })
+    
+function ClearForm() {
+    amount.value = ''
+    users.value = ''
+    service.value = ''
+}
 })()
