@@ -44,7 +44,18 @@ const results = document.querySelector('.results')
 form.addEventListener('submit', function(event) {
     event.preventDefault()
     let bill = amount.value
-    console.log(bill);
+    let people = users.value
+    let quality = service.value
+
+    if (bill === '' || bill <= '0' (people === '' || people <= '0') || quality === '0') {
+        feedback.classList.add('showItem', 'alert-danger')
+        feedback.innerHTML = `
+        <p>Please check the value</p>
+        <p>Bill amount cannot be less than zero</p>
+        <p>Must be more than one person sharing</p>
+        <p>Service has to be selected</p>
+        `
+    }
     
 })
 })()
