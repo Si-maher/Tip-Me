@@ -32,4 +32,10 @@ const form = document.getElementById("tip-form")
 const amount = document.getElementById("input-bill")
 const users = document.getElementById("input-users")
 const services = document.getElementById("input-services")
+
+// Feedback 
+
+const feedback = document.querySelector('.feedback')
+const loader  = document.querySelector('.loader')
+const results = document.querySelector('.results')
 })()
