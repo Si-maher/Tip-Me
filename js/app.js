@@ -15,4 +15,10 @@ const services = [
         title:'great - 2%'
     },
 ]
+services.forEach(function(service) {
+    const option = document.createElement("option")
+    option.textContent = service.title
+    option.value = service.value
+    document.getElementById("input-service").appendChild(option)
+})
 })()
