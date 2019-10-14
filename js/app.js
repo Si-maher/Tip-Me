@@ -14,6 +14,10 @@ const services = [
         value:3,
         title:'great - 2%'
     },
+    {
+        value:4,
+        title:'You are so tight fisted -0%'
+    },
 ]
 services.forEach(function(service) {
     const option = document.createElement("option")
@@ -21,4 +25,11 @@ services.forEach(function(service) {
     option.value = service.value
     document.getElementById("input-service").appendChild(option)
 })
+
+// consts for all the values 
+
+const form = document.getElementById("tip-form")
+const amount = document.getElementById("input-bill")
+const users = document.getElementById("input-users")
+const services = document.getElementById("input-services")
 })()
