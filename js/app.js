@@ -31,11 +31,20 @@ services.forEach(function(service) {
 const form = document.getElementById("tip-form")
 const amount = document.getElementById("input-bill")
 const users = document.getElementById("input-users")
-const services = document.getElementById("input-services")
+const service = document.getElementById("input-services")
 
 // Feedback 
 
 const feedback = document.querySelector('.feedback')
 const loader  = document.querySelector('.loader')
 const results = document.querySelector('.results')
+
+// submit form 
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault()
+    let bill = amount.value
+    console.log(bill);
+    
+})
 })()
