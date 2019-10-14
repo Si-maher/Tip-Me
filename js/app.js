@@ -62,6 +62,9 @@ form.addEventListener('submit', function(event) {
         feedback.classList.add('showItem', 'alert-success')
         feedback.innerHTML = `<p>calculating...</p>`
         loader.classList.add('showItem')
+        setTimeout(function() {
+            loader.classList.remove('showItem')
+        },5000)
 
     }
     
