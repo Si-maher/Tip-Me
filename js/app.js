@@ -47,7 +47,7 @@ form.addEventListener('submit', function(event) {
     let people = users.value
     let quality = service.value
 
-    if (bill === '' || bill <= '0' (people === '' || people <= '0') || quality === '0') {
+    if (bill === '' || bill <= '0' || (people === '' || people <= '0') || quality === '0') {
         feedback.classList.add('showItem', 'alert-danger')
         feedback.innerHTML = `
         <p>Please check the value</p>
@@ -58,6 +58,11 @@ form.addEventListener('submit', function(event) {
         setTimeout(function() {
             feedback.classList.remove('showItem', 'alert-danger')
         },5000)
+    } else {
+        feedback.classList.add('showItem', 'alert-success')
+        feedback.innerHTML = `<p>calculating...</p>`
+        loader.classList.add('showItem')
+
     }
     
 })
