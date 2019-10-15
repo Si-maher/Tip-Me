@@ -81,7 +81,10 @@ function showResults(bill, people, quality) {
     }else if(quality === '3') {
         percent = 0.02
     }
-    
+    let tipAmount = parseInt(bill) * percent
+    let total = parseInt(bill) + tipAmount
+    let person = total / parseInt(people)
+
 }
 //    clear form  
 function ClearForm() {
