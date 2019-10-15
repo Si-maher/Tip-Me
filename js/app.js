@@ -85,6 +85,11 @@ function showResults(bill, people, quality) {
     let total = parseInt(bill) + tipAmount
     let person = total / parseInt(people)
 
+    results.classList.add('showItem')
+    document.getElementById('tip-amount').textContent =tipAmount
+    document.getElementById('total-amount').textContent =total
+    document.getElementById('person-amount').textContent =person.toFixed(2)
+
 }
 //    clear form  
 function ClearForm() {
