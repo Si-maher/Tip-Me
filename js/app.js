@@ -70,7 +70,20 @@ form.addEventListener('submit', function(event) {
         },5000)
     }
 })
+// show result 
+
+function showResults(bill, people, quality) {
+    let percent = 0
+    if (quality === '1') {
+        percent = 0.2
+    }else if(quality === '2') {
+        percent = 0.1
+    }else if(quality === '3') {
+        percent = 0.02
+    }
     
+}
+//    clear form  
 function ClearForm() {
     amount.value = ''
     users.value = ''
