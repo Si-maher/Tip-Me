@@ -6,7 +6,7 @@ This App was created using JavaScript, CSS, HTML and Bootstrap. The user can ent
 
 # Preview
 
-![Tip me](./TipMe.PNG)
+![Tip me -preview](./TipMe.PNG)
 
 # Technologies
 
